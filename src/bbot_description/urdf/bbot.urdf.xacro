@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="bbot_robot">
+
+  <xacro:include filename="bbot_description.xacro"/>
+
+  <xacro:include filename="bbot_ros2_control.xacro"/>
+
+    <xacro:include filename="lidar.xacro"/>
+    <xacro:include filename="carmer.xacro"/>
+    <xacro:include filename="imu.xacro"/>
+
+  <xacro:bbot_ros2_control/>
+  <xacro:bbot_lidar/>
+  <xacro:bbot_carmer/>
+  <xacro:bbot_imu/>
+
+</robot>
